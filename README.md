@@ -9,8 +9,9 @@
 - Chemical Engineering, Universidade Federal de Viçosa (2010 - 2015)
 
 ## Work Experience
-# Ambev S.A (Mar 2016 - Present)
+### Ambev S.A (Mar 2016 - Present)
 **Data Manager - Payments (_Oct 2023 - Present_)**
+
 Leader of the team responsible for data-focused analysis and automation of supplier payments. Implemented predictive analytics solutions to ensure timely payments and optimize processes impacting payment flows. The team actively detects inconsistencies in other departments' processes that affect payment workflows.
 
 I also serve as Squad Leader for the transition from SAP ECC to HANA, leading KPI report automation, advanced data visualization, and continuous performance indicator monitoring.
@@ -22,6 +23,7 @@ Main Projects:
 
 
 **Logistics Cost Manager (_Dec 2022 - Oct 2023_)**
+
 Corporate manager of 1st tier transportation costs, including development of 1, 3 and 10 years plans for the 1st tier transportation department and yearly corporate budget planning. Subsequently, I followed up monthly with actual cost analysis and solutions aiming its reduction.
 
 Main Projects:
@@ -38,6 +40,7 @@ Main Results:
 
 
 **International Logistics Digital Products and Services Manager	 (_Apr 2021 - Dec 2022_)**
+
 Leader of a 6-person team responsible for optimizing South Africa’s ABI transportation network. Optimization was achieved through implementation and execution of Blue Yonder’s Transportation management system (TMS). Team was also responsible for maintaining master data and improving the optimization algorithm. 
 Additionally, I acted as the Product Manager for digital products related to production scheduling, routing, and warehouse management (WMS).
 
@@ -53,7 +56,10 @@ Main results:
 
 ## Projects
 ### Identifying Customer High Density geolocations for crowd-warehousing and crowd-shipping
-[Output](https://thalesmansur.github.io/portfolio/contents/kmeans_58-c-points.html)
+
+#### 
+[Link to Output](https://thalesmansur.github.io/portfolio/contents/kmeans_58-c-points.html)
+---
 
 1st place project in Supply Chain and Logistics MBA at Fundação Dom Cabral, it uses K-means to identify high costumer density locations so advanced inventories can be placed near its centroid. Then, instead of using large trucks stopping at every delivery point, deliveris for the whole day are dropped at a single point and crows-shipped to the final costumer.
 
@@ -61,6 +67,7 @@ It works by iterating through values of the K-means n_clusters hyperparamater an
 
 **Model Results**
 ![Model_results](/contents/model_results.png)
+
 
 **Visual representation of the model working**
 ![Model_results](/contents/model_working.gif)
