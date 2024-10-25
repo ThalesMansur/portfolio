@@ -1,6 +1,9 @@
 # Data Scientist
 [![Curriculum](https://img.shields.io/badge/Curriculum-link-blue?style=for-the-badge)](https://thalesmansur.github.io/portfolio/curriculum)
 
+[![Clifton Certificate](https://img.shields.io/badge/Clifton_strengths-link-orange?style=for-the-badge)](https://thalesmansur.github.io/portfolio/curriculum/Certificate.pdf)
+
+
 # Projects
 
 ### Identifying customer high density geolocations for crowd-warehousing and crowd-shipping
