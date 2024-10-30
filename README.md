@@ -6,13 +6,17 @@
 
 # Projects
 
-### Identifying customer high density geolocations for crowd-warehousing and crowd-shipping
+## Project Spotlight: Optimizing Last-Mile Delivery with K-Means Clustering
+
+### Problem: Delivery scaling past fleet capacity elevated costs tremendously
 
 [![Model Output](https://img.shields.io/badge/Model_Output-link-green?style=for-the-badge)](https://thalesmansur.github.io/portfolio/contents/kmeans_58-c-points.html)
 
-1st place project in Supply Chain and Logistics MBA at Fundação Dom Cabral, it uses K-means to identify high costumer density locations so advanced inventories can be placed near its centroid. Then, instead of using large trucks stopping at every delivery point, deliveris for the whole day are dropped at a single point and crowdshipped to the final costumer.
+In a recent project that won first place in the Supply Chain and Logistics MBA at Fundação Dom Cabral, I used K-means clustering to enhance last-mile delivery logistics. The project identifies high-density customer areas to strategically place advanced inventory locations, reducing delivery time and transportation costs.
 
-It works by iterating through values of the K-means n_clusters hyperparamater and eliminating clusters that don't satisfy the minimum conditions for cluster survival (chosen number of points inside chosen radius). As the number of clusters raises, it starts to sub-divide clusters and lose customer density. The optimal point is chosen where the customer density is the highest.
+The approach involves iterating through the K-means n_clusters hyperparameter to find the optimal number of clusters. As clusters subdivide, they eventually lose the necessary customer density. The selection criteria for the best cluster configuration focus on maximizing customer density and retaining only clusters that meet a specified minimum number of points within a defined radius. Once these optimized clusters are established, large trucks deliver to a central drop-off point, where crowdshipping takes over for final delivery.
+
+This strategic model significantly improves delivery efficiency by reducing stops and placing inventory closer to high-demand areas, enhancing both speed and scalability for modern logistics.
 
 **Model Results**
 ![Model_results](/contents/model_results.png)
