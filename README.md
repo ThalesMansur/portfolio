@@ -3,10 +3,9 @@
 
 [![Clifton Certificate](https://img.shields.io/badge/Clifton_strengths-link-orange?style=for-the-badge)](https://thalesmansur.github.io/portfolio/curriculum/Certificate.pdf)
 
-
 # Projects
 
-## Project Spotlight: Optimizing Last-Mile Delivery with K-Means Clustering
+## Project Spotlight #1: Optimizing Last-Mile Delivery with K-Means Clustering
 
 ### Problem: Delivery scaling past fleet capacity elevated costs tremendously
 
@@ -27,11 +26,36 @@ This strategic model significantly improves delivery efficiency by reducing stop
 
 <hr>
 
-## Projects to Detail:
+## Project Spotlight #2: Enhancing Warehouse Picking Productivity Evaluation with Order Complexity
 
-### Warehouse picker productivity classification considering order complexity 
+### Problem: Standard metrics like Boxes/hour fail to capture productivity nuances in complex orders
+
+Metrics such as Boxes/hour often oversimplify productivity, ignoring that more complex orders require additional time per box due to tasks like warehouse navigation and pallet assembly. To address this, I developed a Random Forest Regression model that leverages six months of data to create a "model worker" profile, representing the team’s "average" productivity for any specific order. By predicting expected picking times, this model enables a relative comparison of individual performance against historical team averages, offering a more dynamic and context-aware benchmark.
+
+The model’s predictions were validated in partnership with supervisors, ensuring both accuracy and practical application.
+
+**Boxplot Analysis: Time and Item Complexity Across Pickers:**
+The boxplots reveal that Picker F (green) has higher picking times, which aligns with handling a greater variety of items—a known predictor of longer assembly times for complex orders. This analysis supports a nuanced evaluation of productivity, taking order complexity into account.
+![Model_results](/contents/Boxplot_comparison.JPG)
+
+
+**Model Output:** 
+Each new order receives a predicted completion time. Once the order is fulfilled, the worker’s actual time is compared to this prediction to assess performance:
+
+$\color{#C00000}{Score~0:}$ Worker took more than 10% longer than predicted.
+
+$\color{#FFC000}{Score~1:}$ Worker’s time was within ±10% of the predicted time.
+
+$\color{#50B893}{Score~2:}$ Worker completed the order in at least 10% less time than predicted.
+
+![Model_results](/contents/model_classification_output.jpeg)
+
+This scoring system enables performance classification by comparing each worker’s results against a “model” worker, created from six months of team-wide data assembling similar orders. This approach offers a consistent benchmark for individual productivity evaluation.
 
 <hr>
+
+
+## Projects to Detail:
 
 ### Transportation costs breakdown by cost function integral
 
