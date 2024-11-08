@@ -42,11 +42,11 @@ The boxplots reveal that Picker F (green) has higher picking times, which aligns
 **Model Output:** 
 Each new order receives a predicted completion time. Once the order is fulfilled, the worker’s actual time is compared to this prediction to assess performance:
 
-<span style="color:red">*Score 0*:</span> Worker took more than 10% longer than predicted.
+<span style="color:#FFFFFF; background-color: #C00000;font-size: 20px;">*Score 0*:</span> Worker took more than 10% longer than predicted.
 
-<span style="color:yellow">*Score 1*:</span> Worker’s time was within ±10% of the predicted time.
+<span style="color:#FFFFFF; background-color: #FFC000;font-size: 20px;">*Score 1*:</span> Worker’s time was within ±10% of the predicted time.
 
-<span style="color:green">*Score 2*:</span> Worker completed the order in at least 10% less time than predicted.
+<span style="color:#FFFFFF; background-color: #50B893;font-size: 20px;">*Score 2*:</span> Worker completed the order in at least 10% less time than predicted.
 
 ![Model_results](/contents/model_classification_output.jpeg)
 
