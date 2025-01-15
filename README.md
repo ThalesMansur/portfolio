@@ -1,5 +1,5 @@
 # Data Scientist | Logistics Data Manager | Product Manager
-[![Curriculum](https://img.shields.io/badge/Curriculum-link-blue?style=for-the-badge)](https://thalesmansur.github.io/portfolio/curriculum/cv_tbm.pdf)
+[![Resume](https://img.shields.io/badge/Curriculum-link-blue?style=for-the-badge)](https://thalesmansur.github.io/portfolio/curriculum/Resume_Thales%20Mansur.pdf)
 
 [![Clifton Certificate](https://img.shields.io/badge/Clifton_strengths-link-orange?style=for-the-badge)](https://thalesmansur.github.io/portfolio/curriculum/Certificate.pdf)
 
