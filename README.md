@@ -3,9 +3,45 @@
 
 [![Clifton Certificate](https://img.shields.io/badge/Clifton_strengths-link-orange?style=for-the-badge)](https://thalesmansur.github.io/portfolio/curriculum/Certificate.pdf)
 
+# Certificates
+
+<a href="https://www.credential.net/5d157341-0eb5-4292-ba09-94845b5efe84" target="_blank">
+  <img src="https://pdf.ms.credential.net/badge/image?env=production&credential=nmj0r68i"
+       alt="Databricks Certified Generative AI Engineer Associate"
+       width="200" />
+</a>
+
 # Projects
 
-## Project Spotlight #1: Optimizing Last-Mile Delivery with K-Means Clustering
+## Project Spotlight #1: Iowa Liquor Sales Forecasting Platform — end-to-end on GCP
+
+County-level monthly sales-volume forecasting, from raw public BigQuery data to a queryable forecast, a real-time API, and a conversational agent — built solo, time-boxed, and cost/quota-aware on GCP free tier.
+
+Designed and shipped a full forecasting platform on GCP: a stateless Cloud Run ETL pipeline feeds a BigQuery warehouse, a weekly Cloud Run training job fits a global gradient-boosting model with per-county auto-detected seasonality, and forecasts are served three ways — a queryable BigQuery table, a real-time FastAPI service, and a Gemini agent. Every architecture choice was made against explicit cost/quota constraints, with a champion/challenger promotion gate keeping the production model honest.
+
+**Highlight bullets**:
+
+* +10.6% sMAPE over seasonal-naive (14.6% vs 16.4%, R² 0.985); one global GBM beats per-county ARIMA on 74% of 99 counties
+* Leakage-safe one-step-ahead model with recursive multi-horizon forecasting and per-horizon-widened prediction intervals
+* Champion/challenger promotion on a leakage-free holdout; Vertex @production alias selects, GCS stores the bytes
+* DE-1 schema-drift gate halts on breaking upstream changes using a free metadata call (0 bytes scanned)
+* Keyless CI/CD (GitHub OIDC → Workload Identity Federation), path-filtered redeploys, fully-mocked tests
+* Two access layers: Gemini 2.5 Flash agent (fuzzy-matched BigQuery tools)
+
+**Tech stack chips**: 
+
+BigQuery · Cloud Run (Jobs + Service) · Vertex AI Model Registry · Cloud Scheduler · GCS · scikit-learn · Optuna · FastAPI · Gemini/Google ADK · Looker Studio · GitHub Actions
+
+## Full Solution Diagram
+![](contents/iowa-diagram.png)
+
+## Screenshots
+![WIF](contents/wif.png)
+![Cloud Run](contents/cloud_run.png)
+![Big Query](contents/bigquery_tables.png)
+
+
+## Project Spotlight #2: Optimizing Last-Mile Delivery with K-Means Clustering
 
 ### Problem: Delivery scaling past fleet capacity elevated costs tremendously
 
@@ -26,7 +62,7 @@ This strategic model significantly improves delivery efficiency by reducing stop
 
 <hr>
 
-## Project Spotlight #2: Enhancing Warehouse Picking Productivity Evaluation with Order Complexity
+## Project Spotlight #3: Enhancing Warehouse Picking Productivity Evaluation with Order Complexity
 
 ### Problem: Standard metrics like Boxes/hour fail to capture productivity nuances in complex orders
 
